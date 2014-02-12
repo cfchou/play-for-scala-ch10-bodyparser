@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+
+# Store file to local
+GET		/fileupload	                controllers.FileUpload.index
+POST    /fileupload/file            controllers.FileUpload.file
+
+# Store file to S3
+GET		/amazons3upload	            controllers.AmazonS3Upload.index
+PUT		/amazons3upload/file        controllers.AmazonS3Upload.file
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
