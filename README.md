@@ -5,8 +5,8 @@ This is an application modified from the sample from Chapter 10 of
 custom BodyParser.
 
 Instead of Java libraries[*], [S3Put](https://github.com/cfchou/s3put)
-is used. S3Put is a small library that upload(HTTP PUT) files to Amazon S3
-using _Spray.io_ and _Akka_.
+is used here. S3Put is a small library that uploads(HTTP PUT) files to Amazon
+S3 using _Spray.io_ and _Akka_.
 
 
 [*] Original sample uses the java library [AsyncHttpClient(AHC)]
